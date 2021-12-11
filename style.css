@@ -1,0 +1,189 @@
+/*-----------------------General---------------*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+#wrapper{
+    width: 70%;
+    margin: auto;
+}
+
+/*-----------------------Header---------------*/
+
+header{
+    background-color: blue;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke; 
+}
+
+img{
+    width: 100%;
+}
+
+/*-----------------------Main---------------*/
+
+main{
+    background-color: whitesmoke;
+}
+
+nav{
+    background-color: blue;
+    text-align: center;
+    height: auto; 
+}
+
+a{
+    color: whitesmoke;
+    margin: 20px;
+    text-decoration: none;   
+}
+
+a:hover{
+    color: red; 
+}
+
+#flex{
+    display: flex;
+    align-items: flex-start; 
+}
+
+article{
+    width: 90%;
+    text-align: justify;
+    margin: 50px 0 0 20px;
+}
+
+h2{
+    color: yellowgreen;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+article > figure {
+    display: flex;
+    justify-content: space-between ;   
+}
+
+.ima1{
+    width: 33%;
+    border: 2px solid black; 
+    margin-bottom: 10px;
+}
+  
+aside{
+    width: 30%;
+    background-color: blue;
+    margin: 100px 20px 5px 20px;
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+}  
+
+.ima2{
+    width: 50%;
+    border: 2px solid white;  
+}
+
+h3{
+    font-size: x-large;
+}
+
+h4{
+    font-style: italic;
+    padding: 5px;   
+}
+    
+figcaption > p{
+    width: 70%;
+    margin: auto;
+    text-align: justify; 
+} 
+
+/*-----------------------Footer---------------*/
+
+footer{
+    background-color: blue;
+    text-align: center;
+    color: whitesmoke; 
+    padding: 5px; 
+}
+
+footer > small{
+    padding: 5px;
+}
+  
+
+/*------------------Media Query---------------*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #wrapper{
+        width:100%;
+    } 
+
+    nav{
+        background-color: blue;
+        display: flex;
+        flex-direction: column; 
+        height: auto;   
+    }
+
+    a{
+        color: whitesmoke;
+        margin:2px;
+        text-decoration: none;   
+    }
+   
+    
+    figcaption > p{
+        width: 100%;
+    } 
+}
+
+@media (max-width: 767px) {
+    #wrapper{
+        width:100%;
+    }
+
+    nav{
+        background-color: blue;
+        display: flex;
+        flex-direction: column; 
+        height: auto;   
+    }
+    a{
+        color: whitesmoke;
+        margin:2px;
+        text-decoration: none;   
+    }
+
+    aside{
+        width: 30%;
+        background-color: blue;
+        margin: 100px 20px 0 20px;
+        text-align: center;
+        color: whitesmoke; 
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: small;
+        padding: 10px 0 10px 0;
+    }
+
+    figcaption > p{
+        width: 100%;
+    } 
+}
